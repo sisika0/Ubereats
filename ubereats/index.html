@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" href="css/cssstyle.css">
+	<link rel="stylesheet" href="css/stylef.css">
+	<link rel="stylesheet" href="css/osnov.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ubereats</title>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="registrationModalLabel">Вход в аккаунт</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+							<input type="email" class="form-control registr" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Пароль</label>
+							<input type="password" class="form-control registr" placeholder="Password" id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+						</div>
+						<button type="submit" class="btn btn-secondary btn-lg">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__logo">
+					<a href="#" class="header__logo--link">
+						<img src="pictures/logo.svg" alt="Ubereats" class="header__logo--img" tabindex="-1">
+					</a>
+				</div>
+				<nav class="header__nav">
+<button type="button" class="btn btn-outline-custom custom-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+					<a href="#">
+						<svg class="logoby" xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+							<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+						</svg>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="col-auto">
+			<input type="text" class="form-control search" id="autoSizingInput" placeholder="Поиск по ресторанам и кухням">
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="restaurant">Рестораны в Москве</h2>
+	</div>
+	
+	<main class="allfood">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <section class="section">
+                    <a class="picture-link" href="secondpage.html" target="#">
+                        <figure class="card_content">
+                            <div class="card_img">
+                                <img class="img-fluid" src="pictures/1 picture.svg" alt="Mac">
+                            </div>
+                            <figcaption class="card_text">
+                                <div class="name">Макдоналдс - Газетный</div>
+                                <div class="opis">₽₽ • Бургеры</div>
+                                <div class="time">25 - 35 мин</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+            </div>
+        
+            <div class="col-xl-4 col-md-6 col-xs-12">
+                <section class="section">
+                    <a class="picture-link" href="secondpage.html" target="#">
+                        <figure class="card_content">
+                            <div class="card_img">
+                                <img class="img-fluid" src="pictures/4 picture.svg" alt="Burger">
+                            </div>
+                            <figcaption class="card_text">
+                                <div class="name">DimSum & Co — ЦДМ</div>
+                                <div class="opis">₽ • Японская • Китайская • Азиатская</div>
+                                <div class="time">40 - 50 мин</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+            </div>
+  
+            <div class="col-xl-4 col-md-6 col-xs-12">
+                <section class="section">
+                    <a class="picture-link" href="secondpage.html" target="#">
+                        <figure class="card_content">
+                            <div class="card_img">
+                                <img class="img-fluid" src="pictures/picture 7.svg" alt="Pizza">
+                            </div>
+                            <figcaption class="card_text">
+                                <div class="name">ДвижОК — Манежная</div>
+                                <div class="opis">₽ • Американская • Европейская</div>
+                                <div class="time">35 - 45 мин</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+            </div>
+						<div class="col-xl-4 col-md-6 col-sm-12">
+							<section class="section">
+									<a class="picture-link" href="secondpage.html" target="#">
+											<figure class="card_content">
+													<div class="card_img">
+															<img class="img-fluid" src="pictures/2 picture.svg" alt="Pizza">
+													</div>
+													<figcaption class="card_text">
+															<div class="name">НЯ — NHA</div>
+															<div class="opis">₽₽ • Вьетнамская</div>
+															<div class="time">30 - 40 мин</div>
+													</figcaption>
+											</figure>
+									</a>
+							</section>
+					</div>
+					<div class="col-xl-4 col-md-6 col-sm-12">
+						<section class="section">
+								<a class="picture-link" href="secondpage.html" target="#">
+										<figure class="card_content">
+												<div class="card_img">
+														<img class="img-fluid" src="pictures/5 picture.svg" alt="Pizza">
+												</div>
+												<figcaption class="card_text">
+														<div class="name">Точка Дзы — Цветной</div>
+														<div class="opis">₽₽ • Вьетнамская</div>
+														<div class="time">40 - 50 мин</div>
+												</figcaption>
+										</figure>
+								</a>
+						</section>
+				</div>
+				<div class="col-xl-4 col-md-6 col-sm-12">
+					<section class="section">
+							<a class="picture-link" href="secondpage.html" target="#">
+									<figure class="card_content">
+											<div class="card_img">
+													<img class="img-fluid" src="pictures/picture 8.svg" alt="Pizza">
+											</div>
+											<figcaption class="card_text">
+													<div class="name">Cinnabon</div>
+													<div class="opis">₽ • Выпечка • Десерты • Капкейки</div>
+													<div class="time">25 - 35 мин</div>
+											</figcaption>
+									</figure>
+							</a>
+					</section>
+			</div>
+			<div class="col-xl-4 col-md-6 col-sm-12">
+				<section class="section">
+						<a class="picture-link" href="secondpage.html" target="#">
+								<figure class="card_content">
+										<div class="card_img">
+												<img class="img-fluid" src="pictures/3 picture.svg" alt="Pizza">
+										</div>
+										<figcaption class="card_text">
+												<div class="name">PIZZELOVE</div>
+												<div class="opis">₽₽ • Пицца</div>
+												<div class="time">15 - 25 мин</div>
+										</figcaption>
+								</figure>
+						</a>
+				</section>
+		</div>
+		<div class="col-xl-4 col-md-6 col-sm-12">
+			<section class="section">
+					<a class="picture-link" href="secondpage.html" target="#">
+							<figure class="card_content">
+									<div class="card_img">
+											<img class="img-fluid" src="pictures/6 picture.svg" alt="Pizza">
+									</div>
+									<figcaption class="card_text">
+											<div class="name">Zю кафе — Тверская</div>
+											<div class="opis">₽₽ • Японская</div>
+											<div class="time">25 - 35 мин</div>
+									</figcaption>
+							</figure>
+					</a>
+			</section>
+	</div>
+	<div class="col-xl-4 col-md-6 col-sm-12">
+		<section class="section">
+				<a class="picture-link" href="secondpage.html" target="#">
+						<figure class="card_content">
+								<div class="card_img">
+										<img class="img-fluid" src="pictures/picture 9.svg" alt="Pizza">
+								</div>
+								<figcaption class="card_text">
+										<div class="name">Bar BQ Cafe — Манежная</div>
+										<div class="opis">₽₽₽ • Европейская</div>
+										<div class="time">30 - 40 мин</div>
+								</figcaption>
+						</figure>
+				</a>
+		</section>
+</div>
+        </div>
+    </div>
+</main>
+<div class="botcont">
+<div class="container">
+	<div class="whitelogo">
+		<a href="#">
+		<img src="pictures/white-logo.svg" alt="logo" tabindex="-1">
+	</a>
+	</div>
+	<div class="palka"></div>
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+			<div class="lang">
+				<img src="pictures/world.svg" class="planet " tabindex="-1">
+				<img src="pictures/arrow.svg" class="arrow" tabindex="-1">
+				<select class="form-select" aria-label="Выбор языка">
+					<option selected>Русский</option>
+					<option value="1">English</option>
+					<option value="2">France</option>
+					<option value="3">German</option>
+				</select>
+			</div>
+			<div class="socials">
+				<div class="teg">
+					<a class="tegis" href="#">
+						<a href="https://www.youtube.com/@UberEats" target="_blank"><div><span class="hesteg">#</span><span class="nadpis">UberEats</span></div></a>
+					</a>
+				</div>
+				<div class="socials-logo">
+					<a  class="facebook-link" href="https://www.facebook.com/UberEats/" target="_blank"><img src="pictures/facebook.svg" class="facebook"></a>
+					<a class="instagram-link" href="https://www.instagram.com/ubereats/" target="_blank"><img src="pictures/instagram.svg" class="instagram"></a>
+					<a class="twitter-link" href="https://twitter.com/UberEats?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="pictures/twitter.svg" class="twitter"></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="list">
+				<ul>
+					<li><a class="tabl1" href="https://help.uber.com/ru-RU/ubereats/restaurants/article/uber-eats-nedir?nodeId=fbf73e2a-c21f-4a48-8333-c874ae195fd1" target="_blank">Об UberEats</a></li>
+					<li><a class="tabl1" href="https://www.uber.com/pl/ru/deliver/" target="_blank">Станьте партнером по доставке</a></li>
+					<li><a class="tabl1" href="https://www.uber.com/pl/ru/deliver/" target="_blank">Станьте партнером рестораном</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="list">
+				<ul>
+					<li><a class="tabl1" href="https://www.uber.com/ru/newsroom/ubereats-6/" target="_blank">Все города</a></li>
+					<li><a class="tabl1" href="https://help.uber.com/ru-RU/ubereats/restaurants/article/%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D1%82%D0%BE%D0%B8%D1%82-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-uber%C2%A0eats?nodeId=e4d2b68b-9982-4dde-a224-9733485ccdb9" target="_blank">Цены</a></li>
+					<li><a class="tabl1" href="https://www.uber.com/ru-UA/blog/svyazhites-s-uber/#:~:text=%D0%9E%D1%82%D0%BA%D1%80%D0%BE%D0%B9%D1%82%D0%B5%20%D0%9C%D0%B5%D0%BD%D1%8E%20%D0%B2%20%D0%BB%D0%B5%D0%B2%D0%BE%D0%BC%20%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%BC,%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%BE%D1%82%D0%B7%D1%8B%D0%B2." target="_blank">Помощь</a></li>
+					<li><a class="tabl1" href="https://www.uber.com/us/en/deliver/basics/before-you-start/how-to-get-support/" target="_blank">FAQs</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="palka2"></div>
+		<div class="download">
+			<a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&pli=1" target="_blank"><img src="pictures/appstore.svg" class="downloadp" ></a>
+			<a href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277" target="_blank"><img src="pictures/googleplay.svg" class="downloadp" ></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="palka3"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+					<div class="col-md-4 col-lg-4 lastspisok"><a href="https://www.uber.com/us/en/about/" class="lastspisok" target="_blank">© 2017 Uber Technologies Inc.</a></div>
+					<div class="col-md-4 col-xl-4 lastspisok"><a href="https://www.uber.com/legal/ru/document/?country=united-states&lang=ru&name=privacy-notice" class="lastspisok" target="_blank">Обработка персональных данных</a></div>
+					<div class="col-md-4 col-lg-4 lastspisok"><a href="https://www.uber.com/legal/ru/" class="lastspisok" target="_blank">Пользовательское соглашение</a></div>
+			</div>
+		</div>
+		<div class="container"><div class="bottom-container"><a href="#"><img src="pictures/btn-up.svg" class="fixarrow" tabindex="-1"></a></div></div>
+	</div>
+</div>
+</body>
+</html>
